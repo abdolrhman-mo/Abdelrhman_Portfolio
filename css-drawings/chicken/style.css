@@ -1,0 +1,223 @@
+body {
+  background: rgb(95, 177, 255);
+}
+.forky {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transition: all 0.3s ease;
+  height: 100vh;
+}
+.face {
+  z-index: -1;
+  width: 300px;
+  height: 300px;
+  background: #f0f0f0;
+  position: absolute;
+  border-radius: 65% 30% 65% 28%;
+  transform: rotate(-45deg);
+  top: -135px;
+  left: -147px;
+}
+
+.face-mask1 {
+  width: 300px;
+  height: 60px;
+  background: rgb(95, 177, 255);
+  position: absolute;
+  top: -160px;
+  left: -143px;
+}
+.fork1,
+.fork2,
+.fork3,
+.fork4 {
+  position: absolute;
+  background: #f0f0f0;
+  width: 50px;
+  height: 50px;
+  border-radius: 0% 100% 47% 53% / 53% 50% 50% 47%;
+  transform: rotate(25deg);
+  top: -120px;
+}
+.fork2,
+.fork3 {
+  top: -125px;
+}
+.fork2 {
+  left: -40px;
+  top: -118px;
+  transform: rotateZ(44deg) scaleX(1.5);
+}
+.fork3 {
+  right: -56px;
+  transform: rotateZ(25deg) scaleX(1.1);
+}
+
+.fork4 {
+  right: -101.5px;
+}
+.fork1 {
+  transform: rotateY(180deg) rotateZ(30deg);
+  left: -94.5px;
+}
+
+/*  Eyes  */
+.eye1,
+.eye2,
+.pupil1,
+.pupil2 {
+  position: absolute;
+  border-radius: 50%;
+}
+.eye1,
+.eye2 {
+  background: #fff;
+}
+.eye1 {
+  width: 100px;
+  height: 100px;
+  top: -40px;
+  left: -100px;
+  box-shadow: 1px 1px 10px #b9b9b9;
+}
+.eye2 {
+  width: 60px;
+  height: 60px;
+  right: -91px;
+  top: -24px;
+  box-shadow: 1px 1px 10px #b9b9b9;
+}
+.pupil1 {
+  width: 55px;
+  height: 55px;
+  top: 7px;
+  right: 7px;
+}
+.pupil2 {
+  width: 35px;
+  height: 35px;
+  top: 3px;
+  left: 3px;
+}
+.pupil1,
+.pupil2 {
+  background: #000;
+}
+.mouth1,
+.mouth2 {
+  z-index: 1;
+  position: absolute;
+  height: 81px;
+  border: 15px solid #71acc8;
+  border-radius: 42% 17% 70% 44% / 32% 26% 80% 73%;
+}
+.mouth1 {
+  width: 120px;
+  top: 46px;
+  left: -60px;
+  clip-path: polygon(0 33%, 100% 11%, 99% 100%, 0% 100%);
+}
+.mouth2 {
+  width: 144px;
+  top: -6px;
+  left: -78px;
+  clip-path: polygon(0 83%, 100% 56%, 99% 100%, 0% 100%);
+}
+.brow {
+  width: 150px;
+  height: 51px;
+  border: 20px solid #d70000;
+  border-radius: 32% 43% 39% 52% / 28% 21% 86% 72%;
+  position: absolute;
+  top: -90px;
+  left: -91px;
+  clip-path: polygon(0 54%, 100% 39%, 99% 100%, 0% 100%);
+  transform: rotate(188deg);
+}
+.handle {
+  width: 80px;
+  height: 229px;
+  background: #f0f0f0;
+  position: absolute;
+  top: 171px;
+  left: -32px;
+}
+.handle-mask1,
+.handle-mask2 {
+  border-radius: 87% 13% 100% 0% / 0% 100% 0% 100%;
+  width: 100px;
+  height: 229px;
+  background: rgb(95, 177, 255);
+  position: absolute;
+  top: 188px;
+  left: -122px;
+}
+.handle-mask2 {
+  left: 38px;
+  transform: rotateY(180deg);
+  top: 178px;
+}
+.chicken-body {
+  height: 380px;
+  width: 380px;
+  border-radius: 52% 48% 54% 46% / 63% 64% 36% 37%;
+  background: #f0f0f0;
+  position: absolute;
+  top: 249px;
+  left: -182px;
+}
+
+/*  CODE CONTAINER  */
+.code-btn {
+  font-size: 140%;
+  padding: 1rem;
+  width: 15rem;
+  float: right;
+  margin: 10px;
+  margin-top: 0;
+  cursor: pointer;
+}
+.code-container {
+  background-color: #1e1f26;
+  color: #fff;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  width: 0px;
+  padding: 20px;
+  border: 15px solid #333642;
+  border-radius: 5px;
+  height: 87vh;
+  overflow: auto;
+  float: right;
+  position: relative;
+}
+.element {
+  color: #bbbb4b;
+}
+.element-styles {
+  padding-left: 16px;
+}
+.slide-left {
+  animation: slide-left 0.3s ease;
+  animation-fill-mode: forwards;
+}
+.slide-right {
+  animation: slide-right 0.3s ease;
+  animation-fill-mode: forwards;
+}
+@keyframes slide-left {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 700px;
+  }
+}
+@keyframes slide-right {
+  0% {
+    width: 700px;
+  }
+  100% {
+    width: 0px;
+  }
+}

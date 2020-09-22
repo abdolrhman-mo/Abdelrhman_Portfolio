@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./chicken-icon.jpg"></link>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>funky little face</title>
+  </head>
+  <body>
+    <div class="forky">
+      <div class="face"></div>
+      <div class="face-mask1"></div>
+      <div class="fork1"></div>
+      <div class="fork2"></div>
+      <div class="fork3"></div>
+      <div class="fork4"></div>
+      <div class="eye1">
+        <div class="pupil1"></div>
+      </div>
+      <div class="eye2">
+        <div class="pupil2"></div>
+      </div>
+      <div class="brow"></div>
+      <div class="mouth1"></div>
+      <div class="mouth2"></div>
+      <div class="handle"></div>
+      <div class="handle-mask1"></div>
+      <div class="handle-mask2"></div>
+      <div class="chicken-body"></div>
+    </div>
+    <div class="code-container">
+      <span class="element">body</span> {<br>
+        <div class="element-styles">
+          background: rgb(95, 177, 255);<br>
+        </div>
+      }<br>
+      .<span class="element">forky</span> {<br>
+        <div class="element-styles">
+          position: absolute;<br>
+          top: 300px;<br>
+          left: 50%;<br>
+        </div>
+      }<br>
+      .<span class="element">face</span> {<br>
+        <div class="element-styles">
+          z-index: -1;<br>
+          width: 300px;<br>
+          height: 300px;<br>
+          background: #f0f0f0;<br>
+          position: absolute;<br>
+          border-radius: 65% 30% 65% 28%;<br>
+          transform: rotate(-45deg);<br>
+          top: -135px;<br>
+          left: -147px;<br>
+        </div>
+      }<br>
+      .<span class="element">face-mask1</span> {<br>
+        <div class="element-styles">
+          width: 300px;<br>
+          height: 60px;<br>
+          background: rgb(95, 177, 255);<br>
+          position: absolute;<br>
+          top: -160px;<br>
+          left: -143px;<br>
+        </div>
+      }<br>
+      <br>  
+      .<span class="element">fork1</span>,<br>
+      .<span class="element">fork2</span>,<br>
+      .<span class="element">fork3</span>,<br>
+      .<span class="element">fork4</span> {<br>
+        <div class="element-styles">
+          position: absolute;<br>
+          background: #f0f0f0;<br>
+          width: 50px;<br>
+          height: 50px;<br>
+          border-radius: 0% 100% 47% 53% / 53% 50% 50% 47%;<br>
+          transform: rotate(25deg);<br>
+          top: -120px;<br>
+        </div>
+      }<br>
+      .<span class="element">fork2</span>,<br>
+      .<span class="element">fork3</span> {<br>
+        <div class="element-styles">
+          top: -125px;<br>
+        </div>
+      }<br>
+      .<span class="element">fork2</span> {<br>
+        <div class="element-styles">
+          left: -40px;<br>
+          top: -118px;<br>
+          transform: rotateZ(44deg) scaleX(1.5);<br>
+        </div>
+      }<br>
+      .<span class="element">fork3</span> {<br>
+        <div class="element-styles">
+          right: -56px;<br>
+          transform: rotateZ(25deg) scaleX(1.1);<br>
+        </div>
+      }<br>
+      <br>
+      .<span class="element">fork4</span> {<br>
+        <div class="element-styles">
+          right: -101.5px;<br>
+        </div>
+      }<br>
+      .<span class="element">fork1</span> {<br>
+        <div class="element-styles">
+          transform: rotateY(180deg) rotateZ(30deg);<br>
+          left: -94.5px;<br>
+        </div>
+      }<br>
+      <br>
+      <span class="comment">/*  Eyes  */</span><br>
+      .<span class="element">eye1</span>,<br>
+      .<span class="element">eye2</span>,<br>
+      .<span class="element">pupil1</span>,<br>
+      .<span class="element">pupil2</span> {<br>
+        <div class="element-styles">
+          position: absolute;<br>
+          border-radius: 50%;<br>
+        </div>
+      }<br>
+      .<span class="element">eye1</span>,<br>
+      .<span class="element">eye2</span> {<br>
+        <div class="element-styles">
+          background: #fff;<br>
+        </div>
+      }<br>
+      .<span class="element">eye1</span> {<br>
+        <div class="element-styles">
+          width: 100px;<br>
+          height: 100px;<br>
+          top: -40px;<br>
+          left: -100px;<br>
+          box-shadow: 1px 1px 10px #b9b9b9;<br>
+        </div>
+      }<br>
+      .<span class="element">eye2</span> {<br>
+        <div class="element-styles">
+          width: 60px;<br>
+          height: 60px;<br>
+          right: -91px;<br>
+          top: -24px;<br>
+          box-shadow: 1px 1px 10px #b9b9b9;<br>
+        </div>
+      }<br>
+      .<span class="element">pupil1</span> {<br>
+        <div class="element-styles">
+          width: 55px;<br>
+          height: 55px;<br>
+          top: 7px;<br>
+          right: 7px;<br>
+        </div>
+      }<br>
+      .<span class="element">pupil2</span> {<br>
+        <div class="element-styles">
+          width: 35px;<br>
+          height: 35px;<br>
+          top: 3px;<br>
+          left: 3px;<br>
+        </div>
+      }<br>
+      .<span class="element">pupil1</span>,<br>
+      .<span class="element">pupil2</span> {<br>
+        <div class="element-styles">
+          background: #000;<br>
+        </div>
+      }<br>
+      .<span class="element">mouth1</span>,<br>
+      .<span class="element">mouth2</span> {<br>
+        <div class="element-styles">
+          z-index: 1;<br>
+          position: absolute;<br>
+          height: 81px;<br>
+          border: 15px solid #71acc8;<br>
+          border-radius: 42% 17% 70% 44% / 32% 26% 80% 73%;<br>
+        </div>
+      }<br>
+      .<span class="element">mouth1</span> {<br>
+        <div class="element-styles">
+          width: 120px;<br>
+          top: 46px;<br>
+          left: -60px;<br>
+          clip-path: polygon(0 33%, 100% 11%, 99% 100%, 0% 100%);<br>
+        </div>
+      }<br>
+      .<span class="element">mouth2</span> {<br>
+        <div class="element-styles">
+          width: 144px;<br>
+          top: -6px;<br>
+          left: -78px;<br>
+          clip-path: polygon(0 83%, 100% 56%, 99% 100%, 0% 100%);<br>
+        </div>
+      }<br>
+      .<span class="element">brow</span> {<br>
+        <div class="element-styles">
+          width: 150px;<br>
+          height: 51px;<br>
+          border: 20px solid #d70000;<br>
+          border-radius: 32% 43% 39% 52% / 28% 21% 86% 72%;<br>
+          position: absolute;<br>
+          top: -90px;<br>
+          left: -91px;<br>
+          clip-path: polygon(0 54%, 100% 39%, 99% 100%, 0% 100%);<br>
+          transform: rotate(188deg);<br>
+        </div>
+      }<br>
+      .<span class="element">handle</span> {<br>
+        <div class="element-styles">
+          width: 80px;<br>
+          height: 229px;<br>
+          background: #f0f0f0;<br>
+          position: absolute;<br>
+          top: 171px;<br>
+          left: -32px;<br>
+        </div>
+      }<br>
+      .<span class="element">handle-mask1</span>,<br>
+      .<span class="element">handle-mask2</span> {<br>
+        <div class="element-styles">
+          border-radius: 87% 13% 100% 0% / 0% 100% 0% 100%;<br>
+          width: 100px;<br>
+          height: 229px;<br>
+          background: rgb(95, 177, 255);<br>
+          position: absolute;<br>
+          top: 188px;<br>
+          left: -122px;<br>
+        </div>
+      }<br>
+      .<span class="element">handle-mask2</span> {<br>
+        <div class="element-styles">
+          left: 38px;<br>
+          transform: rotateY(180deg);<br>
+          top: 178px;<br>
+        </div>
+      }<br>
+      .<span class="element">chicken-body</span> {<br>
+        <div class="element-styles">
+          height: 380px;<br>
+          width: 380px;<br>
+          border-radius: 52% 48% 54% 46% / 63% 64% 36% 37%;<br>
+          background: #f0f0f0;<br>
+          position: absolute;<br>
+          top: 249px;<br>
+          left: -182px;<br>
+        </div>
+      }<br>
+    </div>
+    <button class="code-btn">show code</button>
+  </body>
+</html>

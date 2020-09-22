@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACE,WADS,CACT,OAAO,CAAC;EACN,MAAM,EAAE,MAAM;CACf;;AAHH,AAIE,WAJS,CAIT,EAAE,CAAC;EACD,KAAK,EAAE,KAAK;CACb;;AANH,AAOE,WAPS,CAOT,EAAE,CAAC;EACD,KAAK,EAAE,KAAK;CACb;;AATH,AAUE,WAVS,CAUT,GAAG,AAAA,MAAM,CAAC;EACR,KAAK,EAAE,KAAK;CACb;;AAEH,AAAA,qBAAqB,CAAC;EACpB,aAAa,EAAE,MAAM;CACtB",
+    "sources": [
+        "build-smaller-phone.scss"
+    ],
+    "names": [],
+    "file": "build-smaller-phone.css"
+}
