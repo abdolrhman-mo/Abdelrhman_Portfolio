@@ -3,7 +3,8 @@ header#header .logo {
   left: 26px;
 }
 
-#logo-img {
+#logo-img1,
+#logo-img2 {
   height: 5.3rem;
   width: 5.3rem;
   opacity: 1;

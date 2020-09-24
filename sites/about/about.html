@@ -6,14 +6,15 @@
     <link rel="icon" href="../../assets/images/title-icon.png" />
     <link rel="stylesheet" href="../../style/build.css" />
     <link rel="stylesheet" href="about-style.css" />
+    <link rel="stylesheet" media="screen and (max-width: 480px)" href="about-phone-style.css" />
     <script src="../../js/app.js" defer></script>
     <title>About | Abdelrhman Mohammed - Front-end Web Developer</title>
   </head>
   <body>
-    <header></header>
+    <header class="unclickable"></header>
     <!--    L  O  G  O    -->
     <a href="../../index.html" class="logo internal" data-page="home">
-      <img id="logo-img" src="../../assets/images/main-logo.png" alt="logo" />
+      <img id="logo-img1" src="../../assets/images/main-logo.png" alt="logo" />
     </a>
     <!--    M  E  N  U    -->
     <div class="menu-btn">
@@ -22,7 +23,7 @@
       <div class="menu-btn_burger"></div>
     </div>
     <div class="modal-parent">
-      <div class="modal">
+      <div class="menu-modal">
         <p>MENU</p>
         <ul>
           <li class="modal-about">
@@ -117,9 +118,25 @@
         </div>
       </div>
     </section>
-    <svg id="footer-curve" width="1200" height="285" viewBox="0 0 1200 285" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 140.487L50 164.487C100 188.487 200 236.487 300 248.487C400 260.487 500 236.487 600 182.487C700 128.487 800 44.4867 900 14.4867C1000 -15.5133 1100 8.48673 1150 20.4867L1200 32.4867V284.487H1150C1100 284.487 1000 284.487 900 284.487C800 284.487 700 284.487 600 284.487C500 284.487 400 284.487 300 284.487C200 284.487 100 284.487 50 284.487H0V140.487Z" fill="#201E33"/>
-    </svg>          
+    <div class="footer-curve-wrapper">
+      <svg
+        id="footer-curve"
+        width="1200"
+        height="643"
+        viewBox="0 0 1200 643"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M0 140.487L50 164.487C100 188.487 200 236.487 300 248.487C400 260.487 500 236.487 600 182.487C700 128.487 800 44.4867 900 14.4867C1000 -15.5133 1100 8.48674 1150 20.4867L1200 32.4867V284.487H1150C1100 284.487 1000 284.487 900 284.487C800 284.487 700 284.487 600 284.487C500 284.487 400 284.487 300 284.487C200 284.487 100 284.487 50 284.487H0V140.487Z"
+          fill="#201E33"
+        />
+        <rect y="281" width="1200" height="186" fill="#201E33" />
+        <path d="M1200 457H0V643H1200V457Z" fill="#201E33" />
+      </svg>
+    </div>        
     <div class="footer-wrapper">
       <section id="contacts" class="quick-contact">
         <div class="wrapper text-left-center">

@@ -62,7 +62,9 @@ body section.home-instagram .list-item-portfolio {
 body section.home-instagram .list-item-portfolio h3 {
   padding: 30px;
 }
-
+header.unclickable {
+  pointer-events: none;
+}
 /*  M E N U  */
 .menu-btn_burger {
   right: 0;

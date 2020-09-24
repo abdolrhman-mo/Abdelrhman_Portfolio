@@ -4014,7 +4014,7 @@ div.loader.on .loader-background {
 
 div.loader.fully-closed .swiper-lazy-preloader {
   -webkit-animation: none;
-  animation: none;
+          animation: none;
 }
 
 div.loader:not(.on) .swiper-lazy-preloader {
@@ -4079,7 +4079,7 @@ div.loader .text {
   bottom: 15px;
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 
 div.loader .text.reset > h1,
@@ -4093,7 +4093,7 @@ div.loader .text > h5 {
   color: #e7e8e9;
   opacity: 1;
   -webkit-animation: loader-progress-on 0.4s cubic-bezier(0.3, 0, 0.5, 1);
-  animation: loader-progress-on 0.4s cubic-bezier(0.3, 0, 0.5, 1);
+          animation: loader-progress-on 0.4s cubic-bezier(0.3, 0, 0.5, 1);
 }
 
 div.loader .text > .progress {
@@ -4133,7 +4133,7 @@ div.loader.first-loading .text > h5 {
   -webkit-transition: none;
   transition: none;
   -webkit-animation: loader-progress-on-first-loading 0.4s cubic-bezier(0.3, 0, 0.5, 1);
-  animation: loader-progress-on-first-loading 0.4s cubic-bezier(0.3, 0, 0.5, 1);
+          animation: loader-progress-on-first-loading 0.4s cubic-bezier(0.3, 0, 0.5, 1);
 }
 
 div.loader.on {
@@ -4228,8 +4228,8 @@ form .button-notification-container {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
-  -ms-flex-direction: column-reverse;
-  flex-direction: column-reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
 }
 
 form .button-notification-container > div {
@@ -4240,11 +4240,11 @@ form .button-notification-container > div {
   form .button-notification-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   form .button-notification-container > div {
     width: auto;
@@ -8502,6 +8502,9 @@ img[alt="Profile Image"] {
   img[alt="devices"] {
     width: 500px;
   }
+  .about-text article .text a {
+    display: none;
+  }
 }
 
 .container-fluid .services-text {
@@ -8572,7 +8575,8 @@ img[alt="Profile Image"] {
   }
 }
 
-#logo-img {
+#logo-img1,
+#logo-img2 {
   height: 5.5rem;
   width: 5.5rem;
   opacity: 1;
