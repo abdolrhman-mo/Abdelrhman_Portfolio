@@ -112,4 +112,8 @@ footer#footer .wrapper .row div:last-of-type {
     border: none;
   }
 }
+
+.scroll-top {
+  display: none;
+}
 /*# sourceMappingURL=build-phone.css.map */

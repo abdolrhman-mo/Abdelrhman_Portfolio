@@ -2571,25 +2571,25 @@ a.scroll-top {
   transition: transform 0.4s linear, opacity 0.4s linear, right 0s linear 0.4s, -webkit-transform 0.4s linear;
 }
 
-a.scroll-top.on {
-  right: 14px;
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-  transition: opacity 0.4s linear, background 0.2s cubic-bezier(0.3, 0, 0.5, 1), -webkit-transform 0.4s linear;
-  -webkit-transition: opacity 0.4s linear, background 0.2s cubic-bezier(0.3, 0, 0.5, 1), -webkit-transform 0.4s linear;
-  transition: transform 0.4s linear, opacity 0.4s linear, background 0.2s cubic-bezier(0.3, 0, 0.5, 1);
-  transition: transform 0.4s linear, opacity 0.4s linear, background 0.2s cubic-bezier(0.3, 0, 0.5, 1), -webkit-transform 0.4s linear;
-}
-
-a.scroll-top svg {
-  display: block;
-  width: 20px;
-  height: 20px;
-}
-
-a.scroll-top:active {
-  background: #0f141e;
+@media (min-width: 900px) {
+  a.scroll-top.on {
+    right: 14px;
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    transition: opacity 0.4s linear, background 0.2s cubic-bezier(0.3, 0, 0.5, 1), -webkit-transform 0.4s linear;
+    -webkit-transition: opacity 0.4s linear, background 0.2s cubic-bezier(0.3, 0, 0.5, 1), -webkit-transform 0.4s linear;
+    transition: transform 0.4s linear, opacity 0.4s linear, background 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+    transition: transform 0.4s linear, opacity 0.4s linear, background 0.2s cubic-bezier(0.3, 0, 0.5, 1), -webkit-transform 0.4s linear;
+  }
+  a.scroll-top svg {
+    display: block;
+    width: 20px;
+    height: 20px;
+  }
+  a.scroll-top:active {
+    background: #0f141e;
+  }
 }
 
 @media (min-width: 768px) and (min-height: 620px) {
@@ -8707,5 +8707,16 @@ footer#footer .copyright {
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
   display: inline-block;
+}
+
+footer#footer a {
+  opacity: 0.5;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+footer#footer a:hover {
+  border: none;
+  opacity: 1;
 }
 /*# sourceMappingURL=build.css.map */
