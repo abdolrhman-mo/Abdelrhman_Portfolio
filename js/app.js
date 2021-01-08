@@ -2,14 +2,19 @@ const loadingSection = document.querySelector(".loading-section");
 const myContainer = document.querySelector(".container-fluid");
 const scrollTopLink = document.querySelector("a.scroll-top");
 
+const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 window.addEventListener("load", () => {
-  const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
-
   tl.to(".text-span", { y: "0%", duration: 1, stagger: 0.25 });
   tl.to(".slider", { y: "-100%", duration: 1.5, delay: 0.5 });
   tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
   tl.fromTo(".logo", { opacity: 0 }, { opacity: 1, duration: 1.5 }, "-=1");
   tl.fromTo(".menu-btn", { opacity: 0 }, { opacity: 1, duration: 1.5 }, "-=1");
+  tl.fromTo(
+    ".contact-link",
+    { opacity: 0 },
+    { opacity: 1, duration: 1 },
+    "-=1"
+  );
   tl.fromTo(
     ".about-text",
     { opacity: 0 },

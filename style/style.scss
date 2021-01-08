@@ -1,0 +1,14 @@
+//   FONTS
+@font-face {
+  font-family: "poppins-normal";
+  src: url("../assets/fonts/Poppins/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: "eurostile-bold";
+  src: url("../assets/fonts/eurostile/EurostileBold.ttf");
+}
+
+//   VARIABLES
+$main_color: rgb(16, 15, 68);
+$head_font: "eurostile-bold", sans-serif;
+$paragraph_font: "poppins-normal", sans-serif;
